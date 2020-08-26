@@ -1,0 +1,68 @@
+{
+  "name": "questioning-test",
+  "version": "1.0.0",
+  "private": true,
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "start": "node index.js",
+    "test": "test"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@types/vue-material": "git+https://github.com/calebsander/vue-material-types.git",
+    "@vue/cli": "^4.5.4",
+    "body-parser": "^1.19.0",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^8.0.0-0",
+    "vue-material": "^1.0.0-beta-15",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.5.1",
+    "@types/jest": "^24.0.19",
+    "@types/node": "^14.6.1",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^3.9.7",
+    "vue-jest": "^5.0.0-0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "_id": "questioning-test@1.0.0",
+  "bugs": {
+    "url": "https://github.com/jkorichneva/node/issues"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "homepage": "https://github.com/jkorichneva/node#readme",
+  "license": "ISC",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkorichneva/node.git"
+  }
+}
