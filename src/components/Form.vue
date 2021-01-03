@@ -26,9 +26,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
 import validate from '@/helpers/validation';
-import ERROR_TEXTS from '@/helpers/constants'; // @ is an alias to /src
+import ERROR_TEXTS from '@/helpers/constants';
+import { Field } from '@/views/ILogin'; // @ is an alias to /src
 
 type FormData = {
   form: Record<string, string>;
@@ -37,7 +38,7 @@ type FormData = {
 export default Vue.extend({
   name: 'Form',
   props: {
-    fields: Array,
+    fields: Array as PropType<Field[]>,
   },
   data(): FormData {
     return {
@@ -47,8 +48,8 @@ export default Vue.extend({
   },
   methods: {
     submitForm(): void {
-      this.fields.forEach((field) => {
-        this.validateField(field.name, this.form[field.name]);
+      this.fields.forEach(({ name }) => {
+        this.validateField(name, this.form[name]);
       });
       const isInvalid = !!Object.keys(this.errors).filter((item) => !!this.errors[item]).length;
       if (!isInvalid) {
